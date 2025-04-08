@@ -1,5 +1,10 @@
+export interface checkBoxType{
+  id:number
+  name:string
+  children?:checkBoxType[]
 
-  export const checkboxesData = [
+}
+  export const checkboxesData:checkBoxType[] = [
     {
       id: 1,
       name: "Fruits",
@@ -50,7 +55,7 @@
           id: 19,
           name: "Root Vegetables",
           children: [
-            { id: 20, sname: "Carrot" },
+            { id: 20, name: "Carrot" },
             { id: 21, name: "Beetroot" },
             { id: 22, name: "Radish" },
           ],
